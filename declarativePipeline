@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Dev') {
+            steps {
+                echo 'Developing World'
+            }
+        }
+        stage('Stage') {
+            steps {
+                echo 'Staging build'
+            }
+        }
+        stage('UAT') {
+            steps {
+                echo 'Beta Testing shit'
+            }
+        }
+        stage('prod') {
+            steps {
+                echo 'Releasing the app to the World'
+            }
+        }
+    }
+}
